@@ -1,0 +1,48 @@
+.add-employee {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  width: 400px;
+  margin: 20px auto;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-employee h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.add-employee form label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.add-employee form input[type="text"],
+.add-employee form input[type="date"],
+.add-employee form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.add-employee form button {
+  display: block;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-employee form button:hover {
+  background-color: #0056b3;
+}

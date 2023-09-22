@@ -1,0 +1,43 @@
+<div *ngIf="employee" class="employee-details">
+  <h2>Edit Employee</h2>
+  <form (submit)="onSave()">
+    <div class="field">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" [(ngModel)]="employee.firstName" name="firstName">
+    </div>
+    <div class="field">
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" [(ngModel)]="employee.lastName" name="lastName">
+    </div>
+    <div class="field">
+      <label for="gender">Gender:</label>
+      <select id="gender" [(ngModel)]="employee.gender" name="gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" [(ngModel)]="employee.dob" name="dob">
+    </div>
+    <div class="field">
+      <label for="bloodGroup">Blood Group:</label>
+      <select id="bloodGroup" [(ngModel)]="employee.bloodGroup" name="bloodGroup">
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+      </select>
+    </div>    
+    <div class="field">
+      <label for="qualification">Qualification:</label>
+      <input type="text" id="qualification" [(ngModel)]="employee.qualification" name="qualification">
+    </div>
+    <button type="submit">Update</button>
+  </form>
+</div>

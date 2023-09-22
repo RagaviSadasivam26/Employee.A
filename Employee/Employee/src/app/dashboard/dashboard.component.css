@@ -1,0 +1,137 @@
+.dashboard {
+  background-color: #f5f5f5;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.banner {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+.logout-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  margin-top: 20px;
+}
+
+.left {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.employee-search {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.employee-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-table th,
+.employee-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.employee-link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.right {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.employee-details-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.employee-details-table th,
+.employee-details-table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+.right {
+  width: 30%; /* adjust as per your layout requirement */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.profile-card {
+  background-color: #f7f7f7;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+.profile-card p {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.profile-card p strong {
+  color: #333;
+}

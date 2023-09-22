@@ -1,0 +1,47 @@
+<div class="dashboard">
+  <div class="banner">
+    <h1>Employee Module</h1>
+    <button class="logout-button" (click)="onLogout()">Logout</button>
+  </div>
+  <div class="content">
+    <div class="left">
+      <div class="employee-search">
+        <input class="search-input" type="text" placeholder="Search employees..." [(ngModel)]="searchTerm"
+          (input)="filterEmployees()">
+        <button class="add-button" (click)="onAddNew()">Add New</button>
+      </div>
+      <table class="employee-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let emp of filteredEmployees">
+            <td><a class="employee-link" [routerLink]="['/employee', emp.id]">{{ emp.id }}</a></td>
+            <td>{{ emp.firstName }} {{ emp.lastName }}</td>
+            <td><button class="delete-button" (click)="onDelete(emp.id)">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+   
+    <div class="right">
+      <div class="profile-card">
+        <h2>User Profile</h2>
+        <p><strong>ID:</strong> {{ loggedInUser.id }}</p>
+        <p><strong>Username:</strong> {{ loggedInUser.username }}</p>
+        <p><strong>First Name:</strong> {{ loggedInUser.firstName }}</p>
+        <p><strong>Last Name:</strong> {{ loggedInUser.lastName }}</p>
+        <p><strong>Email:</strong> {{ loggedInUser.email }}</p>
+        <p><strong>Phone:</strong> {{ loggedInUser.phone }}</p>
+        <p><strong>Date Joined:</strong> {{ loggedInUser.dateJoined }}</p>
+        <p><strong>Role:</strong> {{ loggedInUser.role }}</p>
+      </div>
+    </div>
+
+
+  </div>
+</div>
